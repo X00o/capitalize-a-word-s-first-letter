@@ -5,7 +5,8 @@ Name.addEventListener('click', function(){
     let firstChar = nam.slice(0,1);
     let cap1stChar = firstChar.toUpperCase();
     let remainingLeters = nam.slice(1,nam.length);
-    var wholeWord = cap1stChar +  remainingLeters ;
+    let lowRemainingLeters = remainingLeters.toLowerCase();
+    var wholeWord = cap1stChar +  lowRemainingLeters ;
     alert("Hello, " + wholeWord  );
 
 })
